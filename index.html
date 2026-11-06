@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Связи/StayClose</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#home">
+      <span class="brand-mark" aria-hidden="true"><span></span></span>
+      Связи
+    </a>
+    <nav id="nav" aria-label="Разделы сайта">
+      <a href="#home" data-page="home">Главная</a>
+      <a href="#contacts" data-page="contacts">Контакты</a>
+      <a href="#chat" data-page="chat">Чат</a>
+      <a href="#about" data-page="about">О проекте</a>
+    </nav>
+    <a class="btn" id="cta-open" href="#contacts">Открыть приложение</a>
+    <button class="btn" id="cta-add" type="button" hidden>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
+      Добавить человека
+    </button>
+    <a class="btn btn-outline" id="cta-back" href="#contacts" hidden>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+      К контактам
+    </a>
+  </header>
+
+  <main>
+    <section id="page-home" class="page">
+      <div class="hero">
+        <div class="hero-text">
+          <span class="chip">Напоминание о тех, кто важен</span>
+          <h1>Не теряйте связь с близкими</h1>
+          <p class="lead">«Связи» подсказывает, кому пора написать: кто давно не отвечал, у кого скоро день рождения и о чём вы говорили в прошлый раз.</p>
+          <div class="row-gap">
+            <a class="btn btn-large" href="#contacts">Открыть приложение</a>
+            <button class="btn btn-large btn-outline" type="button" data-scroll="how">Как это работает</button>
+          </div>
+          <p class="muted small">Без рейтингов и счётчиков — только спокойные подсказки.</p>
+        </div>
+
+        <div class="hero-orbit" aria-hidden="true">
+          <div class="ring" style="left:115px;top:115px;width:170px;height:170px"></div>
+          <div class="ring" style="left:65px;top:65px;width:270px;height:270px"></div>
+          <div class="ring" style="left:15px;top:15px;width:370px;height:370px"></div>
+          <div class="orbit-me">Я</div>
+          <div class="spin spin-a">
+          <div class="orbit-person" style="left:148px;top:93px"><div class="orbit-av ring-on">Д</div><div>Дана</div></div>
+          <div class="orbit-person" style="left:222px;top:220px"><div class="orbit-av ring-on">А<span class="orbit-star"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.6l-5.9 3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></span></div><div>Алексей</div></div>
+          </div>
+          <div class="spin spin-b">
+          <div class="orbit-person" style="left:31px;top:246px"><div class="orbit-av">Ж</div><div>Жанна</div></div>
+          <div class="orbit-person" style="left:235px;top:75px"><div class="orbit-av">Т</div><div>Тимур</div></div>
+          </div>
+          <div class="spin spin-c">
+          <div class="orbit-person" style="left:-4px;top:72px"><div class="orbit-av ring-on">М<span class="orbit-star"><svg width="13" height="13" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.5l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.6l-5.9 3 1.3-6.6-4.9-4.6 6.6-.8z"/></svg></span></div><div>Марат</div></div>
+          <div class="orbit-person" style="left:180px;top:360px"><div class="orbit-av">А</div><div>Айгерим</div></div>
+          </div>
+        </div>
+      </div>
+
+      <section id="how" class="band">
+        <div class="band-inner">
+          <h2 class="h2">Как это работает</h2>
+          <p class="lead muted">Три простых шага, ничего лишнего.</p>
+          <div class="grid">
+            <div class="card-lg hover">
+              <div class="step">1</div>
+              <h3>Запиши человека</h3>
+              <p>Имя и короткая заметка о том, что нужно помнить: дела, интересы, о чём стоит спросить.</p>
+            </div>
+            <div class="card-lg hover">
+              <div class="step">2</div>
+              <h3>Отметь общение</h3>
+              <p>Нажми «Написал(а)» — человек станет ближе к центру орбиты. Ближе те, с кем недавно общались.</p>
+            </div>
+            <div class="card-lg hover">
+              <div class="step">3</div>
+              <h3>Вспомни вовремя</h3>
+              <p>Подсказки на главной: день рождения, дело, давняя пауза. Нажми «Написать» — и ты уже в чате.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block">
+        <div class="band-inner">
+          <h2 class="h2">Что внутри</h2>
+          <div class="grid grid-wide">
+            <div class="card-lg outlined hover">
+              <svg class="feat" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="2.5"/><circle cx="12" cy="12" r="6.5" stroke-dasharray="2 3"/><circle cx="12" cy="12" r="10" stroke-dasharray="2 3"/></svg>
+              <h3>Орбита и список</h3>
+              <p>Два вида одних и тех же контактов. Звёздочкой отмечайте тех, кто важен сейчас, а орбита покажет, с кем давно не общались.</p>
+            </div>
+            <div class="card-lg outlined hover">
+              <svg class="feat" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg>
+              <h3>Карточка контакта</h3>
+              <p>«Что нужно помнить», «О чём говорили в прошлый раз», «Не забыть» и «Впереди» — всё о человеке на одном экране.</p>
+            </div>
+            <div class="card-lg outlined hover">
+              <svg class="feat" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 15a2 2 0 0 1-2 2H8l-5 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/><path d="M8 9h8M8 13h5"/></svg>
+              <h3>Журнал и черновик</h3>
+              <p>Записывайте переписку с человеком в журнал. Черновик сообщения собирается из заметок и событий — правьте и отправляйте сами в своём мессенджере.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block block-last">
+        <div class="band-inner">
+          <div class="calm">
+            <div class="calm-text">
+              <h2>Спокойно, по задумке</h2>
+              <p>Никаких серий, очков и красных значков. «Связи» подсказывают, а не подгоняют: человек важнее статистики.</p>
+            </div>
+            <a class="btn btn-light btn-large" href="#contacts">Попробовать</a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <section id="page-contacts" class="page">
+      <div class="app">
+        <aside class="side">
+          <div class="seg" role="group" aria-label="Вид списка">
+            <button type="button" id="view-orbit">Орбита</button>
+            <button type="button" id="view-list">Список</button>
+          </div>
+
+          <div id="tips" class="tips" hidden></div>
+
+          <div class="search-wrap">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+            <input id="search" type="search" placeholder="Поиск по имени" aria-label="Поиск по имени" autocomplete="off">
+          </div>
+
+          <div id="list-view">
+            <div class="side-label">Все контакты</div>
+            <ul id="contact-list" class="list"></ul>
+          </div>
+
+          <div id="orbit-view" hidden>
+            <div id="orbit" class="orbit"></div>
+            <p class="muted small center">Ближе — те, с кем недавно общались. Потяните кольцо, чтобы покрутить орбиту.</p>
+            <button type="button" id="orbit-toggle" class="link-btn orbit-toggle" aria-pressed="true">Остановить вращение</button>
+          </div>
+
+          <div id="side-empty" class="empty" hidden></div>
+        </aside>
+
+        <section id="detail" class="detail" aria-live="polite"></section>
+      </div>
+    </section>
+
+    <section id="page-chat" class="page">
+      <div id="chat-root" class="chat-layout"></div>
+    </section>
+
+    <section id="page-about" class="page">
+      <div class="about">
+        <h1>О проекте</h1>
+        <p class="lead">«Stay Close» — учебный проект по дисциплине «Проектирование программного обеспечения» (ПО2401). Это небольшая информационная система для тех, кто хочет не терять связь с близкими людьми.</p>
+        <div class="grid">
+          <div class="card-lg outlined">
+            <h3>Что умеет сайт</h3>
+            <ul>
+              <li>добавлять, просматривать, изменять и удалять контакты;</li>
+              <li>искать контакт по имени;</li>
+              <li>отмечать важных людей звёздочкой и дату последнего общения;</li>
+              <li>вести заметки «Не забыть» и события «Впереди»;</li>
+              <li>вести журнал переписки и собирать черновик сообщения.</li>
+            </ul>
+          </div>
+          <div class="card-lg outlined">
+            <h3>Технологии</h3>
+            <p>HTML, CSS и JavaScript без фреймворков. Данные хранятся только в браузере на этом компьютере (localStorage). Сервер, база данных и внешние сервисы не используются.</p>
+          </div>
+          <div class="card-lg outlined">
+            <h3>Безопасность данных</h3>
+            <p>Введённый текст выводится как текст, а не как HTML. Удаление требует подтверждения. Не вводите реальные персональные данные: localStorage — учебное хранилище, а не защищённая база.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <dialog id="contact-dialog" class="modal">
+    <form id="contact-form" novalidate>
+      <h2 id="form-title">Новый контакт</h2>
+      <input type="hidden" id="f-id">
+
+      <label for="f-name">Имя *</label>
+      <input id="f-name" type="text" placeholder="Например, Алексей" autocomplete="off">
+      <div class="error" id="err-name"></div>
+
+      <label for="f-phone">Телефон (необязательно)</label>
+      <input id="f-phone" type="text" placeholder="+7 700 000 00 00" autocomplete="off">
+      <div class="error" id="err-phone"></div>
+
+      <div class="two-cols">
+        <div>
+          <label for="f-birthday">День рождения (необязательно)</label>
+          <input id="f-birthday" type="date">
+          <div class="error" id="err-birthday"></div>
+        </div>
+        <div>
+          <label for="f-rhythm">Как часто писать</label>
+          <select id="f-rhythm">
+            <option value="">Без напоминаний</option>
+            <option value="7">Раз в неделю</option>
+            <option value="14">Раз в 2 недели</option>
+            <option value="30">Раз в месяц</option>
+          </select>
+        </div>
+      </div>
+
+      <label for="f-last">Когда общались в последний раз (необязательно)</label>
+      <input id="f-last" type="date">
+      <div class="error" id="err-last"></div>
+
+      <label for="f-notes">Что нужно помнить</label>
+      <textarea id="f-notes" rows="5" placeholder="Свободная заметка: как дела, что происходит, о чём поговорить"></textarea>
+      <div class="error" id="err-notes"></div>
+
+      <div class="row-gap">
+        <button class="btn" type="submit">Сохранить</button>
+        <button class="btn btn-outline" type="button" id="btn-cancel">Отмена</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="confirm-dialog" class="modal modal-small">
+    <h2 id="confirm-title">Удалить контакт?</h2>
+    <p id="confirm-text"></p>
+    <div class="row-gap">
+      <button class="btn btn-outline" type="button" id="confirm-no">Отмена</button>
+      <button class="btn btn-danger" type="button" id="confirm-yes">Удалить</button>
+    </div>
+  </dialog>
+
+  <div id="toast" role="status" hidden></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
